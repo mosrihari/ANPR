@@ -1,0 +1,6 @@
+pip==21.0.1
+streamlit==0.80.0
+Pillow==8.2.0
+matplotlib==3.4.1
+numpy==1.19.5
+pytesseract==0.3.7
