@@ -20,11 +20,11 @@ def predict_characters(crop_characters, model, labels):
     return final_string
 
 def run(crop_characters):
-    json_file = open('model/MobileNets_character_recognition.json', 'r')
+    json_file = open('model/EfficientNet_character_recognition.json', 'r')
     loaded_model_json = json_file.read()
     json_file.close()
     model = model_from_json(loaded_model_json)
-    model.load_weights("model/License_character_recognition_weight.h5")
+    model.load_weights("model/License_character_recognition_effnet.h5")
 
     labels = LabelEncoder()
     labels.classes_ = np.load('license_character_classes.npy')
